@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+	<title>Caf-fiend: Login</title>
+	<link href="/static/style.css" rel="stylesheet">
+</head>
+
+ <body class="login">
+    <div class="card">
+      {% block main %}
+      <h1 class="Welcome">Welcome {{ team }}!</h1>
+      <h2 class="msg">{{ current }}</h2>
+      {% endblock %}
+      <h1 class="Title">Chalk Chase</h1>
+      <h2 class="log">Get Question:</h1>
+      <form action="/" method="POST" class="form">
+        <label for="street" required>Street Name:</label>
+        <input type="text" id="street" name="street" placeholder="e.g. Park" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+
+</html>
